@@ -58,7 +58,7 @@ export default {
 }
 
 .navbar .navbar-links a li::selection {
-  background: #000;
+  background: #fff;
   color: #ff0000;
 }
 

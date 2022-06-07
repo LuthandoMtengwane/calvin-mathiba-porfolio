@@ -78,9 +78,11 @@ export default {
   left: 50%;
   top: 60%;
   transform: translate(-50%, 30%);
+  -webkit-user-select: none;
   user-select: none;
   -moz-user-select: none;
   display: inline-block;
+  overflow: hidden;
   z-index: -2222;
 }
 
@@ -89,6 +91,10 @@ export default {
   max-width: 100%;
   user-select: none;
   -moz-user-select: none;
+  -webkit-user-select: none;
+  image-rendering: auto;
+  -moz-image-rendering: auto;
+  -webkit-image-rendering: auto;
   display: inline-block;
   pointer-events: none;
   z-index: -2222;
@@ -114,9 +120,18 @@ hr {
   transform: translate(0, 6rem);
   position: absolute;
   z-index: -5555;
+  background-color: #000;
 }
 
 .header-container .title-container h3::selection {
+  background: #fff;
+  color: #ff0000;
+}
+.header-container .position h3::selection {
+  background: #fff;
+  color: #ff0000;
+}
+.header-container .about ::selection {
   background: #fff;
   color: #ff0000;
 }
